@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <title>MonkeType</title>
+</head>
+<body>
+  <div class="content">
+    <div class="aboveContent">
+      <div>
+
+        <label for="userName">Name : </label>
+        <input type="text" name="userName" id="userName" placeholder="Enter your name">
+      </div>
+      <p id="maxScore"></p>
+    </div>
+      <div id="typeBox"></div>
+      <div id="controls">
+        <button id="strt" onclick=startTest()>Start</button>
+        <div id="timer">Time : 60</div>
+        <div id="score">CureentSpeed : 0 WPM</div>
+        <div id="error">Error : 0</div>
+        <div id="accuracy">Accuracy : 100%</div>
+        <button onclick=endTest()>End</button>
+      </div>
+  </div>
+  <div class="sidenav"></div>
+  <script src='script.js' defer ></script>
+</body>
+</html>
